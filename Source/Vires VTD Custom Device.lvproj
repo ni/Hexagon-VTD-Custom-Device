@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="20008000">
+<Project Type="Project" LVVersion="23008000">
 	<Property Name="CCSymbols" Type="Str">Debug,True;</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
@@ -232,6 +232,7 @@
 				<Item Name="Read Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet.vi"/>
 				<Item Name="NI_SystemLogging.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/SystemLogging/NI_SystemLogging.lvlib"/>
 				<Item Name="Get Current LV Bitness.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/Get Current LV Bitness.vi"/>
+				<Item Name="Trim Whitespace One-Sided.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace One-Sided.vi"/>
 			</Item>
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -249,8 +250,8 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
-			<Item Name="NI-XNET Example subVI - Get All Frame and Signal Names.vi" Type="VI" URL="/C/Program Files (x86)/National Instruments/LabVIEW 2020/examples/nixnet/examples.llb/NI-XNET Example subVI - Get All Frame and Signal Names.vi"/>
-			<Item Name="NI-XNET Example subVI - Get Frames and Signals from Clusters.vi" Type="VI" URL="/C/Program Files (x86)/National Instruments/LabVIEW 2020/examples/nixnet/examples.llb/NI-XNET Example subVI - Get Frames and Signals from Clusters.vi"/>
+			<Item Name="NI-XNET Example subVI - Get All Frame and Signal Names.vi" Type="VI" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/nixnet/examples.llb/NI-XNET Example subVI - Get All Frame and Signal Names.vi"/>
+			<Item Name="NI-XNET Example subVI - Get Frames and Signals from Clusters.vi" Type="VI" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/nixnet/examples.llb/NI-XNET Example subVI - Get Frames and Signals from Clusters.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Configuration Release" Type="Source Distribution">
@@ -516,8 +517,8 @@
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Item Name="Dlls" Type="Folder">
-			<Item Name="ModuleManager.dll" Type="Document" URL="../../../../ModuleManager/Release/ModuleManager.dll"/>
-			<Item Name="vclient.dll" Type="Document" URL="../../../../vclient/Release/vclient.dll"/>
+			<Item Name="libMM.so" Type="Document" URL="../../Libraries/libMM.so"/>
+			<Item Name="libVC.so" Type="Document" URL="../../Libraries/libVC.so"/>
 		</Item>
 		<Item Name="NI VeriStand APIs" Type="Folder">
 			<Item Name="Custom Device API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI VeriStand/Custom Device API/Custom Device API.lvlib"/>
@@ -565,6 +566,7 @@
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
 				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
 				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
+				<Item Name="Trim Whitespace One-Sided.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace One-Sided.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="VS Inline Async API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
@@ -674,21 +676,20 @@
 				<Property Name="Bld_buildSpecName" Type="Str">Engine Release</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../Built/Vires VTD/Pharlap</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../Built/Vires VTD/Linux64</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Copy .LLB to NI VeriStand dir.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{4DDC7D17-96A1-4AE7-BF29-EC0FD60BE89D}</Property>
-				<Property Name="Bld_targetDestDir" Type="Path">/Vires VTD Engine Pharlap.llb</Property>
+				<Property Name="Bld_targetDestDir" Type="Path">/Vires VTD Engine Linux64.llb</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
-				<Property Name="Destination[0].path" Type="Path">/Vires VTD Engine Pharlap.llb</Property>
+				<Property Name="Destination[0].path" Type="Path">/Vires VTD Engine Linux64.llb</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].type" Type="Str">LLB</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">/Data</Property>
+				<Property Name="Destination[1].path" Type="Path">/Linux_x64</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{FF691C9F-B76D-42B8-9822-66DFDBD2E2E9}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{677A8A30-660B-40A5-BEFF-A470691F94E8}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/RT PXI Target/Vires VTD Engine.lvlib/RT Driver VI.vi</Property>
@@ -752,10 +753,14 @@
 				<Property Name="Source[5].itemID" Type="Ref">/RT PXI Target/Dlls</Property>
 				<Property Name="Source[5].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[5].type" Type="Str">Container</Property>
-				<Property Name="Source[6].destinationIndex" Type="Int">1</Property>
-				<Property Name="Source[6].itemID" Type="Ref">/RT PXI Target/Dlls/ModuleManager.dll</Property>
-				<Property Name="Source[7].destinationIndex" Type="Int">1</Property>
-				<Property Name="Source[7].itemID" Type="Ref">/RT PXI Target/Dlls/vclient.dll</Property>
+				<Property Name="Source[6].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/RT PXI Target/Vires VTD Engine.lvlib</Property>
+				<Property Name="Source[6].Library.allowMissingMembers" Type="Bool">true</Property>
+				<Property Name="Source[6].type" Type="Str">Library</Property>
+				<Property Name="Source[7].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[7].itemID" Type="Ref">/RT PXI Target/Vires VTD Shared.lvlib</Property>
+				<Property Name="Source[7].Library.allowMissingMembers" Type="Bool">true</Property>
+				<Property Name="Source[7].type" Type="Str">Library</Property>
 				<Property Name="SourceCount" Type="Int">8</Property>
 			</Item>
 		</Item>
