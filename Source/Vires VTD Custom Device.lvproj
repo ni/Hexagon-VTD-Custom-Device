@@ -91,6 +91,9 @@
 			<Item Name="libMM.dll" Type="Document" URL="../../Libraries/libMM.dll"/>
 			<Item Name="libVC.dll" Type="Document" URL="../../Libraries/libVC.dll"/>
 		</Item>
+		<Item Name="_Test" Type="Folder">
+			<Item Name="_Test_TimedLoop.vi" Type="VI" URL="../_Test/_Test_TimedLoop.vi"/>
+		</Item>
 		<Item Name="RDB.lvlib" Type="Library" URL="../RDB/RDB.lvlib"/>
 		<Item Name="Vires VTD Engine.lvlib" Type="Library" URL="../Engine/Vires VTD Engine.lvlib"/>
 		<Item Name="Vires VTD Shared.lvlib" Type="Library" URL="../Shared/Vires VTD Shared.lvlib"/>
@@ -250,8 +253,8 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
-			<Item Name="NI-XNET Example subVI - Get All Frame and Signal Names.vi" Type="VI" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/nixnet/examples.llb/NI-XNET Example subVI - Get All Frame and Signal Names.vi"/>
-			<Item Name="NI-XNET Example subVI - Get Frames and Signals from Clusters.vi" Type="VI" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/nixnet/examples.llb/NI-XNET Example subVI - Get Frames and Signals from Clusters.vi"/>
+			<Item Name="NI-XNET Example subVI - Get All Frame and Signal Names.vi" Type="VI" URL="../Shared/examples.llb/NI-XNET Example subVI - Get All Frame and Signal Names.vi"/>
+			<Item Name="NI-XNET Example subVI - Get Frames and Signals from Clusters.vi" Type="VI" URL="../Shared/examples.llb/NI-XNET Example subVI - Get Frames and Signals from Clusters.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Configuration Release" Type="Source Distribution">
@@ -278,7 +281,7 @@
 				<Property Name="Destination[4].destName" Type="Str">Help</Property>
 				<Property Name="Destination[4].path" Type="Path">../Built/Vires VTD/Help</Property>
 				<Property Name="DestinationCount" Type="Int">5</Property>
-				<Property Name="Source[0].itemID" Type="Str">{42663B0D-A415-4785-AC0B-0F7084628F43}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{37FEA906-5512-4346-A733-10B10853D8BF}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Custom Device Vires VTD.xml</Property>

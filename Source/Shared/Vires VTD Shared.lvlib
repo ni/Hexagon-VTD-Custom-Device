@@ -42,6 +42,7 @@
 			<Item Name="Sensor Name.ctl" Type="VI" URL="../Sensor Name.ctl"/>
 			<Item Name="SensorInfo.ctl" Type="VI" URL="../SensorInfo.ctl"/>
 			<Item Name="SensorInfos.ctl" Type="VI" URL="../SensorInfos.ctl"/>
+			<Item Name="Timedloop Settings.ctl" Type="VI" URL="../Timedloop Settings.ctl"/>
 		</Item>
 		<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
 	</Item>

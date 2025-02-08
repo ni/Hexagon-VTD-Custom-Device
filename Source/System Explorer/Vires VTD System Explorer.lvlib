@@ -73,6 +73,8 @@
 			<Item Name="Version Update.vi" Type="VI" URL="../Version Update.vi"/>
 			<Item Name="Write Network Settings.vi" Type="VI" URL="../Write Network Settings.vi"/>
 			<Item Name="Input String Validation.vi" Type="VI" URL="../Input String Validation.vi"/>
+			<Item Name="Get Timedloop Settings.vi" Type="VI" URL="../Get Timedloop Settings.vi"/>
+			<Item Name="Set Timedloop Settings.vi" Type="VI" URL="../Set Timedloop Settings.vi"/>
 		</Item>
 		<Item Name="Types" Type="Folder"/>
 	</Item>
