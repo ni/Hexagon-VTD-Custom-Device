@@ -101,6 +101,7 @@
 		<Item Name="MM.lvlib" Type="Library" URL="../MM/MM.lvlib"/>
 		<Item Name="SCP.lvlib" Type="Library" URL="../SCP/SCP.lvlib"/>
 		<Item Name="Custom Device Vires VTD.xml" Type="Document" URL="../Custom Device Vires VTD.xml"/>
+		<Item Name="Get Data Channel Property.vi" Type="VI" URL="../System Explorer/Get Data Channel Property.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="_XNET Convert List From Array To Comma.vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/_XNET Convert List From Array To Comma.vi"/>
