@@ -76,6 +76,9 @@
 			<Item Name="Get Timedloop Settings.vi" Type="VI" URL="../Get Timedloop Settings.vi"/>
 			<Item Name="Set Timedloop Settings.vi" Type="VI" URL="../Set Timedloop Settings.vi"/>
 			<Item Name="Get Data Channel Property - ALL.vi" Type="VI" URL="../Get Data Channel Property - ALL.vi"/>
+			<Item Name="Export Data Items Nodes.vi" Type="VI" URL="../Export Data Items Nodes.vi"/>
+			<Item Name="Import Data Items Nodes.vi" Type="VI" URL="../Import Data Items Nodes.vi"/>
+			<Item Name="Set Data Channel Property - ALL.vi" Type="VI" URL="../Set Data Channel Property - ALL.vi"/>
 		</Item>
 		<Item Name="Types" Type="Folder">
 			<Item Name="Data Channel Custom Property.ctl" Type="VI" URL="../Data Channel Custom Property.ctl"/>
