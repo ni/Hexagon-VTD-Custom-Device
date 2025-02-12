@@ -94,6 +94,9 @@
 		<Item Name="_Test" Type="Folder">
 			<Item Name="_Test_TimedLoop.vi" Type="VI" URL="../_Test/_Test_TimedLoop.vi"/>
 		</Item>
+		<Item Name="APIs" Type="Folder">
+			<Item Name="DSLV_Tree.lvlib" Type="Library" URL="../../../DSLV_Tree/DSLV_Tree/DSLV_Tree.lvlib"/>
+		</Item>
 		<Item Name="RDB.lvlib" Type="Library" URL="../RDB/RDB.lvlib"/>
 		<Item Name="Vires VTD Engine.lvlib" Type="Library" URL="../Engine/Vires VTD Engine.lvlib"/>
 		<Item Name="Vires VTD Shared.lvlib" Type="Library" URL="../Shared/Vires VTD Shared.lvlib"/>
@@ -101,7 +104,6 @@
 		<Item Name="MM.lvlib" Type="Library" URL="../MM/MM.lvlib"/>
 		<Item Name="SCP.lvlib" Type="Library" URL="../SCP/SCP.lvlib"/>
 		<Item Name="Custom Device Vires VTD.xml" Type="Document" URL="../Custom Device Vires VTD.xml"/>
-		<Item Name="Get Data Channel Property.vi" Type="VI" URL="../System Explorer/Get Data Channel Property.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="_XNET Convert List From Array To Comma.vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/_XNET Convert List From Array To Comma.vi"/>
