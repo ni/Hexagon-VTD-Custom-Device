@@ -95,7 +95,7 @@
 			<Item Name="_Test_TimedLoop.vi" Type="VI" URL="../_Test/_Test_TimedLoop.vi"/>
 		</Item>
 		<Item Name="APIs" Type="Folder">
-			<Item Name="DSLV_Tree.lvlib" Type="Library" URL="../../../DSLV_Tree/DSLV_Tree/DSLV_Tree.lvlib"/>
+			<Item Name="DSLV_Tree.lvlib" Type="Library" URL="../../Utility/DSLV_Tree/DSLV_Tree.lvlib"/>
 		</Item>
 		<Item Name="RDB.lvlib" Type="Library" URL="../RDB/RDB.lvlib"/>
 		<Item Name="Vires VTD Engine.lvlib" Type="Library" URL="../Engine/Vires VTD Engine.lvlib"/>
