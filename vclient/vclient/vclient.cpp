@@ -37,6 +37,7 @@ int								simFrame;
 /*ID = 34 #########################################################*/
 RDB_TRAJECTORY_t				*ReceiveTrajectoryArray;
 std::vector<int>				ReceiveTrajectoryIDs;
+std::vector<std::vector<RDB_POINT_t>> ReceiveTrajectoryPoints;
 int								ReceiveTrajectoryNoElements;
 /*ID = 6 ##########################################################*/                      
 RDB_LANE_INFO_t					*ReceiveLaneInfoArray;	
@@ -257,6 +258,7 @@ void InitReceiveRDB(int pkID, const int noElements, int IDs[], int WheelIDs[])
 		for (int i = 0; i < noElements; i++)
 		{
 			ReceiveTrajectoryIDs.push_back(IDs[i]);
+			ReceiveTrajectoryPoints.push_back(std::vector<RDB_POINT_t>());
 		}
 		ReceiveTrajectoryNoElements = noElements;
 		ReceiveTrajectoryArray = (RDB_TRAJECTORY_t*)malloc(sizeof(RDB_TRAJECTORY_t)*noElements);
@@ -362,6 +364,7 @@ void clear()
 	ReceiveDriverPerceptionIDs.clear();
 	ReceiveDriverCtrlIDs.clear();
 	ReceiveTrajectoryIDs.clear();
+	ReceiveTrajectoryPoints.clear();
 
 	//free(ReceiveObjectStateArray);
 	//free(ReceiveObjectStateIDs);
@@ -372,7 +375,8 @@ void clear()
 	//SendObjectStateNoElements = 0;
 }
 
-void ReceiveRDBMessage(int pkID, uint8_t *Item[], int id, int wheelid)
+void ReceiveRDBMessage(int pkID, uint8_t *Item[], int id, int wheelid1
+	
 {
 	int x = 0;
 	switch (pkID)
@@ -493,6 +497,14 @@ void ReceiveRDBMessage(int pkID, uint8_t *Item[], int id, int wheelid)
 		}
 		if (x < ReceiveTrajectoryNoElements) {
 			memcpy(Item, &ReceiveTrajectoryArray[x], sizeof(RDB_TRAJECTORY_t));
+			// 处理RDB_POINT_t数据
+			size_t offset = sizeof(RDB_TRAJECTORY_t);
+			for (int j = 0; j < ReceiveTrajectoryArray[x].noDataPoints; j++) 
+			{
+				// 每次复制一个RDB_POINT_t数据
+				memcpy(Item + offset, &ReceiveTrajectoryPoints[x][j], sizeof(RDB_POINT_t));
+				offset += sizeof(RDB_POINT_t);
+			}
 		}
 		break;
 		
@@ -1037,6 +1049,8 @@ void parseRDBMessageEntry(const double & simTime, const unsigned int & simFrame,
 			//If i < ObjectStateNoElements then Match found
 			if (x < ReceiveTrajectoryNoElements) {
 				ReceiveTrajectoryArray[i] = *((RDB_TRAJECTORY_t*)dataPtr);
+				ReceiveTrajectoryPoints[i].resize(trajectory.noDataPoints);
+				memcpy(ReceiveTrajectoryPoints[i].data(), dataPtr + sizeof(RDB_TRAJECTORY_t), trajectory.noDataPoints * sizeof(RDB_POINT_t));
 				i++;
 			}
 			break;
