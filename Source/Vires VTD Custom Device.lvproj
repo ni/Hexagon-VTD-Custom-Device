@@ -93,6 +93,8 @@
 		</Item>
 		<Item Name="_Test" Type="Folder">
 			<Item Name="_Test_TimedLoop.vi" Type="VI" URL="../_Test/_Test_TimedLoop.vi"/>
+			<Item Name="_Test_GetIDviaString.vi" Type="VI" URL="../_Test/_Test_GetIDviaString.vi"/>
+			<Item Name="_Test_Signal_Tree.vi" Type="VI" URL="../_Test/_Test_Signal_Tree.vi"/>
 		</Item>
 		<Item Name="APIs" Type="Folder">
 			<Item Name="DSLV_Tree.lvlib" Type="Library" URL="../../Utility/DSLV_Tree/DSLV_Tree.lvlib"/>
@@ -1008,6 +1010,7 @@
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_localDestDir" Type="Path">../Built/Vires VTD/Linux64</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Copy .LLB to NI VeriStand dir.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{E24CF77A-EDD5-435E-91DE-CAC6522BEA2A}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">Vires VTD Engine Linux64.llb</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
@@ -1019,7 +1022,7 @@
 				<Property Name="Destination[1].path" Type="Path">/Linux_x64</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{9613B56E-936A-420C-9B47-5BE619F96D11}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{ABD90E4B-2060-45EE-A660-78E640F3ACC5}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/RT CompactRIO Target - Linux x64/Vires VTD Engine.lvlib/RT Driver VI.vi</Property>

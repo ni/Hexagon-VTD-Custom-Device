@@ -83,6 +83,8 @@
 			<Item Name="Get Data Channel Property - ALL.vi" Type="VI" URL="../Get Data Channel Property - ALL.vi"/>
 			<Item Name="Get Data Channel Property.vi" Type="VI" URL="../Get Data Channel Property.vi"/>
 			<Item Name="Tree Tag String 2 RDB Receive Objects.vi" Type="VI" URL="../Tree Tag String 2 RDB Receive Objects.vi"/>
+			<Item Name="Add Points.vi" Type="VI" URL="../Add Points.vi"/>
+			<Item Name="Create Point Channels.vi" Type="VI" URL="../Create Point Channels.vi"/>
 		</Item>
 		<Item Name="Types" Type="Folder">
 			<Item Name="Data Channel Custom Property.ctl" Type="VI" URL="../Data Channel Custom Property.ctl"/>
