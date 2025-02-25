@@ -547,6 +547,9 @@
 			<Item Name="Custom Device API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI VeriStand/Custom Device API/Custom Device API.lvlib"/>
 			<Item Name="Custom Device Utility Library.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI VeriStand/Custom Device Tools/Custom Device Utility Library/Custom Device Utility Library.lvlib"/>
 		</Item>
+		<Item Name="MM.lvlib" Type="Library" URL="../MM/MM.lvlib"/>
+		<Item Name="RDB.lvlib" Type="Library" URL="../RDB/RDB.lvlib"/>
+		<Item Name="SCP.lvlib" Type="Library" URL="../SCP/SCP.lvlib"/>
 		<Item Name="Vires VTD Engine.lvlib" Type="Library" URL="../Engine/Vires VTD Engine.lvlib"/>
 		<Item Name="Vires VTD Shared.lvlib" Type="Library" URL="../Shared/Vires VTD Shared.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -653,15 +656,12 @@
 				<Item Name="XNET String To IO Name.vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET String To IO Name.vi"/>
 			</Item>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
-			<Item Name="MM.lvlib" Type="Library" URL="../MM/MM.lvlib"/>
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="nixlvapi.dll" Type="Document" URL="nixlvapi.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="RDB.lvlib" Type="Library" URL="../RDB/RDB.lvlib"/>
-			<Item Name="SCP.lvlib" Type="Library" URL="../SCP/SCP.lvlib"/>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -701,6 +701,7 @@
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_localDestDir" Type="Path">../Built/Vires VTD/Linux64</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Copy .LLB to NI VeriStand dir.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{4DDC7D17-96A1-4AE7-BF29-EC0FD60BE89D}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/Vires VTD Engine Linux64.llb</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
@@ -712,7 +713,7 @@
 				<Property Name="Destination[1].path" Type="Path">/Linux_x64</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{677A8A30-660B-40A5-BEFF-A470691F94E8}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{BF7BAEEB-9A97-4AA5-B25B-EA30ED88B683}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/RT PXI Target/Vires VTD Engine.lvlib/RT Driver VI.vi</Property>

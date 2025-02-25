@@ -28,7 +28,7 @@ extern "C" {
 	VCLIENT_API void InitReceiveRDB(int pkID, const int noElements, int IDs[], int WheelIDs[]);
 	VCLIENT_API void InitSendRDB(int pkID, const int noElements, int IDs[]);
 	VCLIENT_API void parseRDBMessage(RDB_MSG_t* msg, bool & isImage);
-	VCLIENT_API void ReceiveRDBMessage(int pkID, uint8_t *Item[], int id, int wheelid);
+	VCLIENT_API void ReceiveRDBMessage(int pkID, uint8_t *Item[], int id, int wheelid, uint8_t *Data[]);
 	VCLIENT_API int  InitNewRDBMessage();
 	VCLIENT_API int  ComposeRDBMessage(int pkID, int ElementIter, uint8_t *DataIn);
 	VCLIENT_API	int  SendRDBMessage(int size, uint8_t *Item[]);
