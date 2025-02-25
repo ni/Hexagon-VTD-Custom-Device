@@ -15,7 +15,8 @@
 #include <stdio.h>
 #include <string.h>
 
-
+#include <fstream>
+#include <iostream>
 
 
 using namespace Framework;
@@ -138,7 +139,14 @@ int								SendTrafficLightNoElements;
 
 Framework::RDBHandler myHandler;
 
+/* std::ofstream outFile("/c/home/lvuser/SoFiles/trajectory_points.txt");
 
+void closeFile() 
+{
+    if (outFile.is_open()) {
+        outFile.close();
+    }
+} */
 
 void InitReceiveRDB(int pkID, const int noElements, int IDs[], int WheelIDs[])
 {
@@ -365,6 +373,7 @@ void clear()
 	ReceiveDriverCtrlIDs.clear();
 	ReceiveTrajectoryIDs.clear();
 	ReceiveTrajectoryPoints.clear();
+	// closeFile();
 
 	//free(ReceiveObjectStateArray);
 	//free(ReceiveObjectStateIDs);
@@ -375,8 +384,7 @@ void clear()
 	//SendObjectStateNoElements = 0;
 }
 
-void ReceiveRDBMessage(int pkID, uint8_t *Item[], int id, int wheelid1
-	
+void ReceiveRDBMessage(int pkID, uint8_t *Item[], int id, int wheelid, uint8_t *Data[])
 {
 	int x = 0;
 	switch (pkID)
@@ -496,14 +504,25 @@ void ReceiveRDBMessage(int pkID, uint8_t *Item[], int id, int wheelid1
 			x++;
 		}
 		if (x < ReceiveTrajectoryNoElements) {
+			// 给Item赋值，复制RDB_TRAJECTORY_t的数据内容
 			memcpy(Item, &ReceiveTrajectoryArray[x], sizeof(RDB_TRAJECTORY_t));
 			// 处理RDB_POINT_t数据
-			size_t offset = sizeof(RDB_TRAJECTORY_t);
+			// size_t offset = sizeof(RDB_TRAJECTORY_t);
 			for (int j = 0; j < ReceiveTrajectoryArray[x].noDataPoints; j++) 
 			{
 				// 每次复制一个RDB_POINT_t数据
-				memcpy(Item + offset, &ReceiveTrajectoryPoints[x][j], sizeof(RDB_POINT_t));
+				size_t offset = 0;
+				memcpy(Data + offset, &ReceiveTrajectoryPoints[x][j], sizeof(RDB_POINT_t));
 				offset += sizeof(RDB_POINT_t);
+
+				// 将数据写入文件
+				/* outFile << "Trajectory Point " << j << ": "
+						<< "x=" << ReceiveTrajectoryPoints[x][j].x << ", "
+						<< "y=" << ReceiveTrajectoryPoints[x][j].y << ", "
+						<< "z=" << ReceiveTrajectoryPoints[x][j].z << ", "
+						<< "flags=" << ReceiveTrajectoryPoints[x][j].flags << ", "
+						<< "type=" << ReceiveTrajectoryPoints[x][j].type << ", "
+						<< "system=" << ReceiveTrajectoryPoints[x][j].system << std::endl; */
 			}
 		}
 		break;
@@ -512,8 +531,6 @@ void ReceiveRDBMessage(int pkID, uint8_t *Item[], int id, int wheelid1
 		return;
 		break;
 	}
-
-
 }
 
 int InitNewRDBMessage()
