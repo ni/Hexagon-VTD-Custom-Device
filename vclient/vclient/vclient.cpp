@@ -508,10 +508,10 @@ void ReceiveRDBMessage(int pkID, uint8_t *Item[], int id, int wheelid, uint8_t *
 			memcpy(Item, &ReceiveTrajectoryArray[x], sizeof(RDB_TRAJECTORY_t));
 			// 处理RDB_POINT_t数据
 			// size_t offset = sizeof(RDB_TRAJECTORY_t);
+			size_t offset = 0;
 			for (int j = 0; j < ReceiveTrajectoryArray[x].noDataPoints; j++) 
 			{
 				// 每次复制一个RDB_POINT_t数据
-				size_t offset = 0;
 				memcpy(Data + offset, &ReceiveTrajectoryPoints[x][j], sizeof(RDB_POINT_t));
 				offset += sizeof(RDB_POINT_t);
 
