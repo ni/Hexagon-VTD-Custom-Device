@@ -36,7 +36,7 @@
 			<Property Name="NI.SortType" Type="Int">3</Property>
 			<Item Name="Add Remove Culled Object.vi" Type="VI" URL="../Add Remove Culled Object.vi"/>
 			<Item Name="Add Sensor.vi" Type="VI" URL="../Add Sensor.vi"/>
-			<Item Name="Add Wheel ID.vi" Type="VI" URL="../Add Wheel ID.vi"/>
+			<Item Name="Add Pre Section.vi" Type="VI" URL="../Add Pre Section.vi"/>
 			<Item Name="Break down Sensor Object String.vi" Type="VI" URL="../Break down Sensor Object String.vi"/>
 			<Item Name="Break down Sensor String.vi" Type="VI" URL="../Break down Sensor String.vi"/>
 			<Item Name="Break down String.vi" Type="VI" URL="../Break down String.vi"/>

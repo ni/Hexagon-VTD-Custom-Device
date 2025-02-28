@@ -95,6 +95,7 @@
 			<Item Name="_Test_TimedLoop.vi" Type="VI" URL="../_Test/_Test_TimedLoop.vi"/>
 			<Item Name="_Test_GetIDviaString.vi" Type="VI" URL="../_Test/_Test_GetIDviaString.vi"/>
 			<Item Name="_Test_Signal_Tree.vi" Type="VI" URL="../_Test/_Test_Signal_Tree.vi"/>
+			<Item Name="_Test_Read_RDB_Objs.vi" Type="VI" URL="../_Test/_Test_Read_RDB_Objs.vi"/>
 		</Item>
 		<Item Name="APIs" Type="Folder">
 			<Item Name="DSLV_Tree.lvlib" Type="Library" URL="../../Utility/DSLV_Tree/DSLV_Tree.lvlib"/>
