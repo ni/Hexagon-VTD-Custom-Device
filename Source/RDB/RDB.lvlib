@@ -41,6 +41,7 @@
 	<Item Name="RDB Object.ctl" Type="VI" URL="../RDB Object.ctl"/>
 	<Item Name="RDB Parse.vi" Type="VI" URL="../RDB Parse.vi"/>
 	<Item Name="RDB Player Object.ctl" Type="VI" URL="../RDB Player Object.ctl"/>
+	<Item Name="RDB Receive Core.vi" Type="VI" URL="../RDB Receive Core.vi"/>
 	<Item Name="RDB Receive.vi" Type="VI" URL="../RDB Receive.vi"/>
 	<Item Name="RDB Reference.ctl" Type="VI" URL="../RDB Reference.ctl"/>
 	<Item Name="RDB References.ctl" Type="VI" URL="../RDB References.ctl"/>
