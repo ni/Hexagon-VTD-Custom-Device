@@ -133,6 +133,11 @@ int								SendTriggerNoElements;
 RDB_TRAFFIC_LIGHT_t				*SendTrafficLigthArray;
 int								*SendTrafficLigthIDs;
 int								SendTrafficLightNoElements;
+/*ID = 32 ##########################################################*/
+RDB_ROAD_QUERY_t 				*SendRoadQueryArray;
+int 							*SendRoadQueryIDs;
+int 							SendRoadQueryNoElements;
+
 
 
 
@@ -347,6 +352,12 @@ void InitSendRDB(int pkID, const int noElements, int IDs[])
 		SendSyncIDs = IDs;
 		SendSyncNoElements = noElements;
 		SendSyncArray = (RDB_SYNC_t*)malloc(sizeof(RDB_SYNC_t)*noElements);
+		break;
+
+	case 32:
+		SendRoadQueryIDs = IDs;
+		SendRoadQueryNoElements = noElements;
+		SendRoadQueryArray = (RDB_ROAD_QUERY_t*)malloc(sizeof(RDB_ROAD_QUERY_t)*noElements);
 		break;
 
 	default:
@@ -669,6 +680,17 @@ int ComposeRDBMessage(int pkID, int ElementIter, uint8_t *DataIn)
 		}
 		break;
 
+	case 32:
+		SendRoadQueryArray[ElementIter] = *((RDB_ROAD_QUERY_t*)DataIn);
+		if (ElementIter >= SendRoadQueryNoElements - 1)
+		{
+			// add extended package for the object state
+			RDB_ROAD_QUERY_t *objState = (RDB_ROAD_QUERY_t*)myHandler.addPackage(simTime, simFrame, RDB_PKG_ID_ROAD_QUERY, SendRoadQueryNoElements, false);
+			// copy contents of internally held object state to output structure
+			memcpy(objState, SendRoadQueryArray, (sizeof(RDB_ROAD_QUERY_t)*SendRoadQueryNoElements));
+		}
+		break;
+		
 	default:
 		return myHandler.getMsgTotalSize();
 		break;
