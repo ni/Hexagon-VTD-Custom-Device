@@ -96,6 +96,8 @@
 			<Item Name="_Test_GetIDviaString.vi" Type="VI" URL="../_Test/_Test_GetIDviaString.vi"/>
 			<Item Name="_Test_Signal_Tree.vi" Type="VI" URL="../_Test/_Test_Signal_Tree.vi"/>
 			<Item Name="_Test_Read_RDB_Objs.vi" Type="VI" URL="../_Test/_Test_Read_RDB_Objs.vi"/>
+			<Item Name="_Test_U8Array2Str.vi" Type="VI" URL="../_Test/_Test_U8Array2Str.vi"/>
+			<Item Name="_Test_RDB Receive Points.vi" Type="VI" URL="../_Test/_Test_RDB Receive Points.vi"/>
 		</Item>
 		<Item Name="APIs" Type="Folder">
 			<Item Name="DSLV_Tree.lvlib" Type="Library" URL="../../Utility/DSLV_Tree/DSLV_Tree.lvlib"/>
@@ -236,7 +238,6 @@
 				<Item Name="Read Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (DBL).vi"/>
 				<Item Name="Read Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet.vi"/>
 				<Item Name="NI_SystemLogging.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/SystemLogging/NI_SystemLogging.lvlib"/>
-				<Item Name="Get Current LV Bitness.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/Get Current LV Bitness.vi"/>
 				<Item Name="Trim Whitespace One-Sided.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace One-Sided.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
@@ -259,6 +260,7 @@
 				<Item Name="Read From XML File(string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Read From XML File(string).vi"/>
 				<Item Name="Read From XML File(array).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Read From XML File(array).vi"/>
 				<Item Name="Read From XML File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Read From XML File.vi"/>
+				<Item Name="Create NI GUID.vi" Type="VI" URL="/&lt;vilib&gt;/string/Create NI GUID.vi"/>
 			</Item>
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -278,6 +280,7 @@
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
 			<Item Name="NI-XNET Example subVI - Get All Frame and Signal Names.vi" Type="VI" URL="../Shared/examples.llb/NI-XNET Example subVI - Get All Frame and Signal Names.vi"/>
 			<Item Name="NI-XNET Example subVI - Get Frames and Signals from Clusters.vi" Type="VI" URL="../Shared/examples.llb/NI-XNET Example subVI - Get Frames and Signals from Clusters.vi"/>
+			<Item Name="LoggingProber.lvlib" Type="Library" URL="../../Utility/Debug_Logger/LoggingProber.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Configuration Release" Type="Source Distribution">
@@ -564,6 +567,7 @@
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
+				<Item Name="Create NI GUID.vi" Type="VI" URL="/&lt;vilib&gt;/String/Create NI GUID.vi"/>
 				<Item Name="Data Access Engine.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_Data Access Engine/Data Access Engine.lvlib"/>
 				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
@@ -658,6 +662,8 @@
 				<Item Name="XNET String To IO Name (Subframe).vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET String To IO Name (Subframe).vi"/>
 				<Item Name="XNET String To IO Name.vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET String To IO Name.vi"/>
 			</Item>
+			<Item Name="_Test_U8Array2Str.vi" Type="VI" URL="../_Test/_Test_U8Array2Str.vi"/>
+			<Item Name="LoggingProber.lvlib" Type="Library" URL="../../Utility/Debug_Logger/LoggingProber.lvlib"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -850,6 +856,7 @@
 			<Item Name="libMM.so" Type="Document" URL="../../Libraries/libMM.so"/>
 			<Item Name="libVC.so" Type="Document" URL="../../Libraries/libVC.so"/>
 		</Item>
+		<Item Name="LoggingProber.lvlib" Type="Library" URL="../../Utility/Debug_Logger/LoggingProber.lvlib"/>
 		<Item Name="Vires VTD Engine.lvlib" Type="Library" URL="../Engine/Vires VTD Engine.lvlib"/>
 		<Item Name="Vires VTD Shared.lvlib" Type="Library" URL="../Shared/Vires VTD Shared.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -861,6 +868,7 @@
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
+				<Item Name="Create NI GUID.vi" Type="VI" URL="/&lt;vilib&gt;/string/Create NI GUID.vi"/>
 				<Item Name="Custom Device Utility Library.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI VeriStand/Custom Device Tools/Custom Device Utility Library/Custom Device Utility Library.lvlib"/>
 				<Item Name="Data Access Engine.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_Data Access Engine/Data Access Engine.lvlib"/>
 				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
@@ -956,6 +964,7 @@
 				<Item Name="XNET String To IO Name (Subframe).vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET String To IO Name (Subframe).vi"/>
 				<Item Name="XNET String To IO Name.vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET String To IO Name.vi"/>
 			</Item>
+			<Item Name="_Test_U8Array2Str.vi" Type="VI" URL="../_Test/_Test_U8Array2Str.vi"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
 			<Item Name="MM.lvlib" Type="Library" URL="../MM/MM.lvlib"/>
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
@@ -1188,6 +1197,7 @@ DirectoryIndex index.htm
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
+				<Item Name="Create NI GUID.vi" Type="VI" URL="/&lt;vilib&gt;/String/Create NI GUID.vi"/>
 				<Item Name="Data Access Engine.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_Data Access Engine/Data Access Engine.lvlib"/>
 				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
@@ -1282,6 +1292,8 @@ DirectoryIndex index.htm
 				<Item Name="XNET String To IO Name (Subframe).vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET String To IO Name (Subframe).vi"/>
 				<Item Name="XNET String To IO Name.vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET String To IO Name.vi"/>
 			</Item>
+			<Item Name="_Test_U8Array2Str.vi" Type="VI" URL="../_Test/_Test_U8Array2Str.vi"/>
+			<Item Name="LoggingProber.lvlib" Type="Library" URL="../../Utility/Debug_Logger/LoggingProber.lvlib"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
 			<Item Name="MM.lvlib" Type="Library" URL="../MM/MM.lvlib"/>
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
@@ -1469,6 +1481,7 @@ DirectoryIndex index.htm
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
+				<Item Name="Create NI GUID.vi" Type="VI" URL="/&lt;vilib&gt;/String/Create NI GUID.vi"/>
 				<Item Name="Custom Device Utility Library.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI VeriStand/Custom Device Tools/Custom Device Utility Library/Custom Device Utility Library.lvlib"/>
 				<Item Name="Data Access Engine.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_Data Access Engine/Data Access Engine.lvlib"/>
 				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
@@ -1564,6 +1577,8 @@ DirectoryIndex index.htm
 				<Item Name="XNET String To IO Name (Subframe).vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET String To IO Name (Subframe).vi"/>
 				<Item Name="XNET String To IO Name.vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET String To IO Name.vi"/>
 			</Item>
+			<Item Name="_Test_U8Array2Str.vi" Type="VI" URL="../_Test/_Test_U8Array2Str.vi"/>
+			<Item Name="LoggingProber.lvlib" Type="Library" URL="../../Utility/Debug_Logger/LoggingProber.lvlib"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
 			<Item Name="MM.lvlib" Type="Library" URL="../MM/MM.lvlib"/>
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
