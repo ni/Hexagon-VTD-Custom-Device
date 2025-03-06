@@ -274,7 +274,7 @@ void InitReceiveRDB(int pkID, const int noElements, int IDs[], int WheelIDs[])
 			ReceiveTrajectoryPoints.push_back(std::vector<RDB_POINT_t>());
 		}
 		ReceiveTrajectoryNoElements = noElements;
-		ReceiveTrajectoryArray = (RDB_TRAJECTORY_t*)malloc(sizeof(RDB_TRAJECTORY_t)*noElements);
+		ReceiveTrajectoryArray = (RDB_TRAJECTORY_t*)calloc(noElements, sizeof(RDB_TRAJECTORY_t));
 		break;
 
 	default:
@@ -395,7 +395,7 @@ void clear()
 	//SendObjectStateNoElements = 0;
 }
 
-void ReceiveRDBMessage(int pkID, uint8_t *Item[], int id, int wheelid, uint8_t *Data[])
+void ReceiveRDBMessage(int pkID, uint8_t *Item, int id, int wheelid, uint8_t *Data)
 {
 	int x = 0;
 	switch (pkID)
