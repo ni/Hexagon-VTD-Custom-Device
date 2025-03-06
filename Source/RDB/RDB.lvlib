@@ -36,6 +36,7 @@
 	<Item Name="RDB Clear.vi" Type="VI" URL="../RDB Clear.vi"/>
 	<Item Name="RDB Compose Message.vi" Type="VI" URL="../RDB Compose Message.vi"/>
 	<Item Name="RDB Create Objects.vi" Type="VI" URL="../RDB Create Objects.vi"/>
+	<Item Name="RDB Extract Contact_Point Payload.vi" Type="VI" URL="../RDB Extract Contact_Point Payload.vi"/>
 	<Item Name="RDB Init Database.vi" Type="VI" URL="../RDB Init Database.vi"/>
 	<Item Name="RDB Init New Message.vi" Type="VI" URL="../RDB Init New Message.vi"/>
 	<Item Name="RDB Object.ctl" Type="VI" URL="../RDB Object.ctl"/>
