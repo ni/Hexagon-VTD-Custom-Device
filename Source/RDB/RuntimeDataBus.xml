@@ -694,6 +694,18 @@
             <fx:PDU-REF ID-REF="pdu13"/>
           </fx:PDU-TRIGGERING>
         </fx:PDU-TRIGGERINGS>
+        <fx:FRAME-TRIGGERINGS>
+          <fx:FRAME-TRIGGERING ID="trig26_A">
+            <fx:TIMINGS>
+              <fx:ABSOLUTELY-SCHEDULED-TIMING>
+                <fx:SLOT-ID>101</fx:SLOT-ID>
+                <fx:BASE-CYCLE>0</fx:BASE-CYCLE>
+                <fx:CYCLE-REPETITION>1</fx:CYCLE-REPETITION>
+              </fx:ABSOLUTELY-SCHEDULED-TIMING>
+            </fx:TIMINGS>
+            <fx:FRAME-REF ID-REF="frm26"/>
+          </fx:FRAME-TRIGGERING>
+        </fx:FRAME-TRIGGERINGS>
         <flexray:FLEXRAY-CHANNEL-NAME>A</flexray:FLEXRAY-CHANNEL-NAME>
       </fx:CHANNEL>
       <fx:CHANNEL ID="channel4_B" xsi:type="flexray:CHANNEL-TYPE">
@@ -710,18 +722,6 @@
             <fx:PDU-REF ID-REF="pdu13"/>
           </fx:PDU-TRIGGERING>
         </fx:PDU-TRIGGERINGS>
-        <fx:FRAME-TRIGGERINGS>
-          <fx:FRAME-TRIGGERING ID="trig26_B">
-            <fx:TIMINGS>
-              <fx:ABSOLUTELY-SCHEDULED-TIMING>
-                <fx:SLOT-ID>34</fx:SLOT-ID>
-                <fx:BASE-CYCLE>0</fx:BASE-CYCLE>
-                <fx:CYCLE-REPETITION>1</fx:CYCLE-REPETITION>
-              </fx:ABSOLUTELY-SCHEDULED-TIMING>
-            </fx:TIMINGS>
-            <fx:FRAME-REF ID-REF="frm26"/>
-          </fx:FRAME-TRIGGERING>
-        </fx:FRAME-TRIGGERINGS>
         <flexray:FLEXRAY-CHANNEL-NAME>B</flexray:FLEXRAY-CHANNEL-NAME>
       </fx:CHANNEL>
     </fx:CHANNELS>
