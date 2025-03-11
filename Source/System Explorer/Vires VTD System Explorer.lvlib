@@ -45,7 +45,7 @@
 			<Item Name="Create MM Cluster.vi" Type="VI" URL="../Create MM Cluster.vi"/>
 			<Item Name="Create RDB Cluster.vi" Type="VI" URL="../Create RDB Cluster.vi"/>
 			<Item Name="Create Sensor Channel.vi" Type="VI" URL="../Create Sensor Channel.vi"/>
-			<Item Name="Create Wheel Object.vi" Type="VI" URL="../Create Wheel Object.vi"/>
+			<Item Name="Create RDB Objects.vi" Type="VI" URL="../Create RDB Objects.vi"/>
 			<Item Name="Download Files.vi" Type="VI" URL="../Download Files.vi"/>
 			<Item Name="Get Sensor Objects Signals.vi" Type="VI" URL="../Get Sensor Objects Signals.vi"/>
 			<Item Name="Get Sensor Signals.vi" Type="VI" URL="../Get Sensor Signals.vi"/>
@@ -85,6 +85,8 @@
 			<Item Name="Tree Tag String 2 RDB Receive Objects.vi" Type="VI" URL="../Tree Tag String 2 RDB Receive Objects.vi"/>
 			<Item Name="Add Points.vi" Type="VI" URL="../Add Points.vi"/>
 			<Item Name="Create Point Channels.vi" Type="VI" URL="../Create Point Channels.vi"/>
+			<Item Name="Extract the same PlayerID Channels.vi" Type="VI" URL="../Extract the same PlayerID Channels.vi"/>
+			<Item Name="Extract the same Property Channels.vi" Type="VI" URL="../Extract the same Property Channels.vi"/>
 		</Item>
 		<Item Name="Types" Type="Folder">
 			<Item Name="Data Channel Custom Property.ctl" Type="VI" URL="../Data Channel Custom Property.ctl"/>

@@ -33,20 +33,24 @@
 	<Property Name="SaveStatePeriod" Type="UInt">0</Property>
 	<Property Name="Serialized ACL" Type="Bin">)Q#!!!!!!!)!"1!&amp;!!!A1%!!!@````]!!".V&lt;H.J:WZF:#"C?82F)'&amp;S=G&amp;Z!!%!!1!!!!A)!!!!#!!!!!!!!!!</Property>
 	<Property Name="Use Data Logging Database" Type="Bool">true</Property>
+	<Item Name="Types" Type="Folder">
+		<Item Name="RDB Object.ctl" Type="VI" URL="../RDB Object.ctl"/>
+		<Item Name="RDB Player Object.ctl" Type="VI" URL="../RDB Player Object.ctl"/>
+		<Item Name="RDB Reference.ctl" Type="VI" URL="../RDB Reference.ctl"/>
+		<Item Name="RDB References.ctl" Type="VI" URL="../RDB References.ctl"/>
+	</Item>
 	<Item Name="RDB Clear.vi" Type="VI" URL="../RDB Clear.vi"/>
 	<Item Name="RDB Compose Message.vi" Type="VI" URL="../RDB Compose Message.vi"/>
+	<Item Name="RDB Create Objects Receive.vi" Type="VI" URL="../RDB Create Objects Receive.vi"/>
+	<Item Name="RDB Create Objects Sent.vi" Type="VI" URL="../RDB Create Objects Sent.vi"/>
 	<Item Name="RDB Create Objects.vi" Type="VI" URL="../RDB Create Objects.vi"/>
 	<Item Name="RDB Extract Contact_Point Payload.vi" Type="VI" URL="../RDB Extract Contact_Point Payload.vi"/>
 	<Item Name="RDB Init Database.vi" Type="VI" URL="../RDB Init Database.vi"/>
 	<Item Name="RDB Init New Message.vi" Type="VI" URL="../RDB Init New Message.vi"/>
-	<Item Name="RDB Object.ctl" Type="VI" URL="../RDB Object.ctl"/>
 	<Item Name="RDB Parse.vi" Type="VI" URL="../RDB Parse.vi"/>
-	<Item Name="RDB Player Object.ctl" Type="VI" URL="../RDB Player Object.ctl"/>
 	<Item Name="RDB Receive Core.vi" Type="VI" URL="../RDB Receive Core.vi"/>
 	<Item Name="RDB Receive Points.vi" Type="VI" URL="../RDB Receive Points.vi"/>
 	<Item Name="RDB Receive.vi" Type="VI" URL="../RDB Receive.vi"/>
-	<Item Name="RDB Reference.ctl" Type="VI" URL="../RDB Reference.ctl"/>
-	<Item Name="RDB References.ctl" Type="VI" URL="../RDB References.ctl"/>
 	<Item Name="RDB Send Message.vi" Type="VI" URL="../RDB Send Message.vi"/>
 	<Item Name="RuntimeDataBus.xml" Type="Document" URL="../RuntimeDataBus.xml"/>
 </Library>
