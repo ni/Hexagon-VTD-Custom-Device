@@ -38,6 +38,7 @@
 		<Item Name="destroyMsgParser.vi" Type="VI" URL="../libapi/destroyMsgParser.vi"/>
 		<Item Name="ErrorCode.vi" Type="VI" URL="../libapi/ErrorCode.vi"/>
 		<Item Name="resetMsgParser.vi" Type="VI" URL="../libapi/resetMsgParser.vi"/>
+		<Item Name="retrieveContactPoint.vi" Type="VI" URL="../libapi/retrieveContactPoint.vi"/>
 		<Item Name="retrieveGeneralData.vi" Type="VI" URL="../libapi/retrieveGeneralData.vi"/>
 		<Item Name="retrieveTrajectoryData.vi" Type="VI" URL="../libapi/retrieveTrajectoryData.vi"/>
 		<Item Name="retrieveTrajectoryPoint.vi" Type="VI" URL="../libapi/retrieveTrajectoryPoint.vi"/>
@@ -54,13 +55,10 @@
 	<Item Name="RDB Compose Message.vi" Type="VI" URL="../RDB Compose Message.vi"/>
 	<Item Name="RDB Create Objects Receive.vi" Type="VI" URL="../RDB Create Objects Receive.vi"/>
 	<Item Name="RDB Create Objects Sent.vi" Type="VI" URL="../RDB Create Objects Sent.vi"/>
-	<Item Name="RDB Create Objects.vi" Type="VI" URL="../RDB Create Objects.vi"/>
-	<Item Name="RDB Extract Contact_Point Payload.vi" Type="VI" URL="../RDB Extract Contact_Point Payload.vi"/>
-	<Item Name="RDB Init Database.vi" Type="VI" URL="../RDB Init Database.vi"/>
 	<Item Name="RDB Init New Message.vi" Type="VI" URL="../RDB Init New Message.vi"/>
+	<Item Name="RDB Init.vi" Type="VI" URL="../RDB Init.vi"/>
 	<Item Name="RDB Parse.vi" Type="VI" URL="../RDB Parse.vi"/>
 	<Item Name="RDB Receive Core.vi" Type="VI" URL="../RDB Receive Core.vi"/>
-	<Item Name="RDB Receive Points.vi" Type="VI" URL="../RDB Receive Points.vi"/>
 	<Item Name="RDB Receive.vi" Type="VI" URL="../RDB Receive.vi"/>
 	<Item Name="RDB Send Message.vi" Type="VI" URL="../RDB Send Message.vi"/>
 	<Item Name="RuntimeDataBus.xml" Type="Document" URL="../RuntimeDataBus.xml"/>

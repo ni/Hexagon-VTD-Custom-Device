@@ -21,7 +21,6 @@
 		<Item Name="Shut Down" Type="Folder"/>
 		<Item Name="SubVIs" Type="Folder">
 			<Item Name="Case Selection.vi" Type="VI" URL="../Case Selection.vi"/>
-			<Item Name="Compiled_Settings_to_Settings.vi" Type="VI" URL="../../Utility/Compiled_Settings_to_Settings.vi"/>
 		</Item>
 	</Item>
 	<Item Name="Types" Type="Folder">
