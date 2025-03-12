@@ -98,6 +98,8 @@
 			<Item Name="_Test_Read_RDB_Objs.vi" Type="VI" URL="../_Test/_Test_Read_RDB_Objs.vi"/>
 			<Item Name="_Test_U8Array2Str.vi" Type="VI" URL="../_Test/_Test_U8Array2Str.vi"/>
 			<Item Name="_Test_RDB Receive Points.vi" Type="VI" URL="../_Test/_Test_RDB Receive Points.vi"/>
+			<Item Name="_Test_RDBAPI.vi" Type="VI" URL="../_Test/_Test_RDBAPI.vi"/>
+			<Item Name="vcapi.vi" Type="VI" URL="../_Test/vcapi.vi"/>
 		</Item>
 		<Item Name="APIs" Type="Folder">
 			<Item Name="DSLV_Tree.lvlib" Type="Library" URL="../../Utility/DSLV_Tree/DSLV_Tree.lvlib"/>
