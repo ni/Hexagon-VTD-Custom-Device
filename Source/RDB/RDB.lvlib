@@ -34,16 +34,29 @@
 	<Property Name="Serialized ACL" Type="Bin">)Q#!!!!!!!)!"1!&amp;!!!A1%!!!@````]!!".V&lt;H.J:WZF:#"C?82F)'&amp;S=G&amp;Z!!%!!1!!!!A)!!!!#!!!!!!!!!!</Property>
 	<Property Name="Use Data Logging Database" Type="Bool">true</Property>
 	<Item Name="libapi" Type="Folder">
-		<Item Name="createMsgParser.vi" Type="VI" URL="../libapi/createMsgParser.vi"/>
-		<Item Name="destroyMsgParser.vi" Type="VI" URL="../libapi/destroyMsgParser.vi"/>
-		<Item Name="ErrorCode.vi" Type="VI" URL="../libapi/ErrorCode.vi"/>
-		<Item Name="resetMsgParser.vi" Type="VI" URL="../libapi/resetMsgParser.vi"/>
-		<Item Name="retrieveContactPoint.vi" Type="VI" URL="../libapi/retrieveContactPoint.vi"/>
-		<Item Name="retrieveGeneralData.vi" Type="VI" URL="../libapi/retrieveGeneralData.vi"/>
-		<Item Name="retrieveTrajectoryData.vi" Type="VI" URL="../libapi/retrieveTrajectoryData.vi"/>
-		<Item Name="retrieveTrajectoryPoint.vi" Type="VI" URL="../libapi/retrieveTrajectoryPoint.vi"/>
-		<Item Name="retrieveWheelData.vi" Type="VI" URL="../libapi/retrieveWheelData.vi"/>
-		<Item Name="updatePayload.vi" Type="VI" URL="../libapi/updatePayload.vi"/>
+		<Item Name="Receive" Type="Folder">
+			<Item Name="createMsgParser.vi" Type="VI" URL="../libapi/createMsgParser.vi"/>
+			<Item Name="destroyMsgParser.vi" Type="VI" URL="../libapi/destroyMsgParser.vi"/>
+			<Item Name="resetMsgParser.vi" Type="VI" URL="../libapi/resetMsgParser.vi"/>
+			<Item Name="retrieveContactPoint.vi" Type="VI" URL="../libapi/retrieveContactPoint.vi"/>
+			<Item Name="retrieveGeneralData.vi" Type="VI" URL="../libapi/retrieveGeneralData.vi"/>
+			<Item Name="retrieveTrajectoryData.vi" Type="VI" URL="../libapi/retrieveTrajectoryData.vi"/>
+			<Item Name="retrieveTrajectoryPoint.vi" Type="VI" URL="../libapi/retrieveTrajectoryPoint.vi"/>
+			<Item Name="retrieveWheelData.vi" Type="VI" URL="../libapi/retrieveWheelData.vi"/>
+			<Item Name="updatePayload.vi" Type="VI" URL="../libapi/updatePayload.vi"/>
+		</Item>
+		<Item Name="Send" Type="Folder">
+			<Property Name="NI.SortType" Type="Int">3</Property>
+			<Item Name="createMsgBuilder.vi" Type="VI" URL="../libapi/createMsgBuilder.vi"/>
+			<Item Name="initNewMessage.vi" Type="VI" URL="../libapi/initNewMessage.vi"/>
+			<Item Name="insertPackageData.vi" Type="VI" URL="../libapi/insertPackageData.vi"/>
+			<Item Name="buildMessage.vi" Type="VI" URL="../libapi/buildMessage.vi"/>
+			<Item Name="exportMessage.vi" Type="VI" URL="../libapi/exportMessage.vi"/>
+			<Item Name="destroyMsgBuilder.vi" Type="VI" URL="../libapi/destroyMsgBuilder.vi"/>
+		</Item>
+		<Item Name="Shared" Type="Folder">
+			<Item Name="ErrorCode.vi" Type="VI" URL="../libapi/ErrorCode.vi"/>
+		</Item>
 	</Item>
 	<Item Name="Types" Type="Folder">
 		<Item Name="RDB Object.ctl" Type="VI" URL="../RDB Object.ctl"/>
