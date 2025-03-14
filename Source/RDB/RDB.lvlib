@@ -64,6 +64,7 @@
 		<Item Name="RDB Reference.ctl" Type="VI" URL="../RDB Reference.ctl"/>
 		<Item Name="RDB References.ctl" Type="VI" URL="../RDB References.ctl"/>
 	</Item>
+	<Item Name="_RDB_VI_Tree.vi" Type="VI" URL="../_RDB_VI_Tree.vi"/>
 	<Item Name="RDB Clear.vi" Type="VI" URL="../RDB Clear.vi"/>
 	<Item Name="RDB Compose Message.vi" Type="VI" URL="../RDB Compose Message.vi"/>
 	<Item Name="RDB Create Objects Receive.vi" Type="VI" URL="../RDB Create Objects Receive.vi"/>

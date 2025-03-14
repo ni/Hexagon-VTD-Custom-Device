@@ -33,11 +33,13 @@
 	<Property Name="SaveStatePeriod" Type="UInt">0</Property>
 	<Property Name="Serialized ACL" Type="Bin">)Q#!!!!!!!)!"1!&amp;!!!A1%!!!@````]!!".V&lt;H.J:WZF:#"C?82F)'&amp;S=G&amp;Z!!%!!1!!!!A)!!!!#!!!!!!!!!!</Property>
 	<Property Name="Use Data Logging Database" Type="Bool">true</Property>
+	<Item Name="Types" Type="Folder">
+		<Item Name="MM Object.ctl" Type="VI" URL="../MM Object.ctl"/>
+		<Item Name="MM Objects.ctl" Type="VI" URL="../MM Objects.ctl"/>
+		<Item Name="Sensor Engine Data.ctl" Type="VI" URL="../Sensor Engine Data.ctl"/>
+	</Item>
 	<Item Name="CloseModuleManager.vi" Type="VI" URL="../CloseModuleManager.vi"/>
 	<Item Name="Initialize MM Network.vi" Type="VI" URL="../Initialize MM Network.vi"/>
 	<Item Name="InitModuleManager.vi" Type="VI" URL="../InitModuleManager.vi"/>
-	<Item Name="MM Object.ctl" Type="VI" URL="../MM Object.ctl"/>
-	<Item Name="MM Objects.ctl" Type="VI" URL="../MM Objects.ctl"/>
 	<Item Name="Read Network.vi" Type="VI" URL="../Read Network.vi"/>
-	<Item Name="Sensor Engine Data.ctl" Type="VI" URL="../Sensor Engine Data.ctl"/>
 </Library>
