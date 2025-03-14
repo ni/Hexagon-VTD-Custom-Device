@@ -5,9 +5,9 @@
     <eng>Virtual Test Drive</eng>
     <loc>Virtual Test Drive</loc>
   </AddMenu>
-  <Version>2.0.2</Version>
+  <Version>2023.2</Version>
   <Type>Inline HW Interface</Type>
-  <MaxOccurrence>2</MaxOccurrence>
+  <MaxOccurrence>3</MaxOccurrence>
   <MainPageGUID>353f2512-b107-4c99-9510-7a0eded912f5</MainPageGUID>
   <InitializationVI>
     <Type>Action</Type>

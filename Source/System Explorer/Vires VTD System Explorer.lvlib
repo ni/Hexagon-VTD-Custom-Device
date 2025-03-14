@@ -85,7 +85,6 @@
 			<Item Name="Tree Tag String 2 RDB Receive Objects.vi" Type="VI" URL="../Tree Tag String 2 RDB Receive Objects.vi"/>
 			<Item Name="Add Points.vi" Type="VI" URL="../Add Points.vi"/>
 			<Item Name="Create Point Channels.vi" Type="VI" URL="../Create Point Channels.vi"/>
-			<Item Name="Extract the same PlayerID Channels.vi" Type="VI" URL="../Extract the same PlayerID Channels.vi"/>
 			<Item Name="Extract the same Property Channels.vi" Type="VI" URL="../Extract the same Property Channels.vi"/>
 		</Item>
 		<Item Name="Types" Type="Folder">
