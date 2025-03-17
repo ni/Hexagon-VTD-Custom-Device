@@ -33,6 +33,13 @@
 	<Property Name="SaveStatePeriod" Type="UInt">0</Property>
 	<Property Name="Serialized ACL" Type="Bin">)Q#!!!!!!!)!"1!&amp;!!!A1%!!!@````]!!".V&lt;H.J:WZF:#"C?82F)'&amp;S=G&amp;Z!!%!!1!!!!A)!!!!#!!!!!!!!!!</Property>
 	<Property Name="Use Data Logging Database" Type="Bool">true</Property>
+	<Item Name="libapi" Type="Folder">
+		<Item Name="createModuleManager.vi" Type="VI" URL="../libapi/createModuleManager.vi"/>
+		<Item Name="destroyModuleManager.vi" Type="VI" URL="../libapi/destroyModuleManager.vi"/>
+		<Item Name="resetModuleManager.vi" Type="VI" URL="../libapi/resetModuleManager.vi"/>
+		<Item Name="retrieveSensorData.vi" Type="VI" URL="../../RDB/libapi/retrieveSensorData.vi"/>
+		<Item Name="updateMMPayload.vi" Type="VI" URL="../libapi/updateMMPayload.vi"/>
+	</Item>
 	<Item Name="Types" Type="Folder">
 		<Item Name="MM Object.ctl" Type="VI" URL="../MM Object.ctl"/>
 		<Item Name="MM Objects.ctl" Type="VI" URL="../MM Objects.ctl"/>

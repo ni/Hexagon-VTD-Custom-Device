@@ -43,7 +43,7 @@
 			<Item Name="retrieveTrajectoryData.vi" Type="VI" URL="../libapi/retrieveTrajectoryData.vi"/>
 			<Item Name="retrieveTrajectoryPoint.vi" Type="VI" URL="../libapi/retrieveTrajectoryPoint.vi"/>
 			<Item Name="retrieveWheelData.vi" Type="VI" URL="../libapi/retrieveWheelData.vi"/>
-			<Item Name="updatePayload.vi" Type="VI" URL="../libapi/updatePayload.vi"/>
+			<Item Name="updateRDBPayload.vi" Type="VI" URL="../libapi/updateRDBPayload.vi"/>
 		</Item>
 		<Item Name="Send" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">3</Property>
