@@ -102,6 +102,8 @@
 			<Item Name="_Test_RDB Receive Points Core.vi" Type="VI" URL="../_Test/_Test_RDB Receive Points Core.vi"/>
 			<Item Name="_Test_MMAPI_Receive.vi" Type="VI" URL="../_Test/_Test_MMAPI_Receive.vi"/>
 			<Item Name="vcapi.vi" Type="VI" URL="../_Test/vcapi.vi"/>
+			<Item Name="_Test_MM_Unit_test.vi" Type="VI" URL="../_Test/_Test_MM_Unit_test.vi"/>
+			<Item Name="_Test_VC_Unit_test.vi" Type="VI" URL="../_Test/_Test_VC_Unit_test.vi"/>
 		</Item>
 		<Item Name="APIs" Type="Folder">
 			<Item Name="DSLV_Tree.lvlib" Type="Library" URL="../../Utility/DSLV_Tree/DSLV_Tree.lvlib"/>
