@@ -313,7 +313,7 @@
 				<Property Name="Destination[4].destName" Type="Str">Help</Property>
 				<Property Name="Destination[4].path" Type="Path">../Built/Vires VTD/Help</Property>
 				<Property Name="DestinationCount" Type="Int">5</Property>
-				<Property Name="Source[0].itemID" Type="Str">{37FEA906-5512-4346-A733-10B10853D8BF}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{C179FD25-E02F-46ED-9542-A09763575225}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Custom Device Vires VTD.xml</Property>
@@ -499,65 +499,6 @@
 				<Property Name="Source[7].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[7].type" Type="Str">Container</Property>
 				<Property Name="SourceCount" Type="Int">8</Property>
-			</Item>
-			<Item Name="vires-vtd-custom-device" Type="{E661DAE2-7517-431F-AC41-30807A3BDA38}">
-				<Property Name="NIPKG_addToFeed" Type="Bool">false</Property>
-				<Property Name="NIPKG_allDependenciesToFeed" Type="Bool">false</Property>
-				<Property Name="NIPKG_allDependenciesToSystemLink" Type="Bool">false</Property>
-				<Property Name="NIPKG_certificates" Type="Bool">true</Property>
-				<Property Name="NIPKG_createInstaller" Type="Bool">true</Property>
-				<Property Name="NIPKG_feedLocation" Type="Path">../builds/NI_AB_PROJECTNAME/My Package/Feed</Property>
-				<Property Name="NIPKG_feedLocation.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_installerArtifacts" Type="Str">Install.exe|InstallCHS.dll|InstallDEU.dll|InstallFRA.dll|InstallJPN.dll|InstallKOR.dll|bin|feeds|pool|system-packages
-</Property>
-				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">true</Property>
-				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/My Package/Package Installer</Property>
-				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">vires-vtd-custom-device_1.0.0-0_windows_x64.nipkg</Property>
-				<Property Name="NIPKG_license" Type="Ref"></Property>
-				<Property Name="NIPKG_packageVersion" Type="Bool">false</Property>
-				<Property Name="NIPKG_releaseNotes" Type="Str"></Property>
-				<Property Name="NIPKG_storeProduct" Type="Bool">false</Property>
-				<Property Name="NIPKG_VisibleForRuntimeDeployment" Type="Bool">false</Property>
-				<Property Name="PKG_actions.Count" Type="Int">0</Property>
-				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
-				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">1</Property>
-				<Property Name="PKG_buildSpecName" Type="Str">vires-vtd-custom-device</Property>
-				<Property Name="PKG_dependencies.Count" Type="Int">1</Property>
-				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
-				<Property Name="PKG_dependencies[0].MaxVersion" Type="Str"></Property>
-				<Property Name="PKG_dependencies[0].MaxVersionInclusive" Type="Bool">false</Property>
-				<Property Name="PKG_dependencies[0].MinVersion" Type="Str">23.3.0.49272-0+f120</Property>
-				<Property Name="PKG_dependencies[0].MinVersionType" Type="Str">Inclusive</Property>
-				<Property Name="PKG_dependencies[0].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (64-bit)</Property>
-				<Property Name="PKG_dependencies[0].Package.Name" Type="Str">ni-labview-2023-runtime-engine</Property>
-				<Property Name="PKG_dependencies[0].Package.Section" Type="Str">Programming Environments</Property>
-				<Property Name="PKG_dependencies[0].Package.Synopsis" Type="Str">The LabVIEW Runtime is a software add-on that enables engineers to run executables on a nondevelopment machine.</Property>
-				<Property Name="PKG_dependencies[0].Relationship" Type="Str">Required Dependency</Property>
-				<Property Name="PKG_dependencies[0].Type" Type="Str">NIPKG</Property>
-				<Property Name="PKG_description" Type="Str"></Property>
-				<Property Name="PKG_destinations.Count" Type="Int">1</Property>
-				<Property Name="PKG_destinations[0].ID" Type="Str">{FC2D8FA3-B06E-491A-9B5C-B42CA9D0EA58}</Property>
-				<Property Name="PKG_destinations[0].Subdir.Directory" Type="Str">Vires VTD Custom Device</Property>
-				<Property Name="PKG_destinations[0].Subdir.Parent" Type="Str">root_5</Property>
-				<Property Name="PKG_destinations[0].Type" Type="Str">Subdir</Property>
-				<Property Name="PKG_displayName" Type="Str">My Package</Property>
-				<Property Name="PKG_displayVersion" Type="Str"></Property>
-				<Property Name="PKG_feedDescription" Type="Str"></Property>
-				<Property Name="PKG_feedName" Type="Str"></Property>
-				<Property Name="PKG_homepage" Type="Str"></Property>
-				<Property Name="PKG_hostname" Type="Str"></Property>
-				<Property Name="PKG_maintainer" Type="Str">National Instruments &lt;&gt;</Property>
-				<Property Name="PKG_output" Type="Path">../builds/NI_AB_PROJECTNAME/vires-vtd-custom-device/Package</Property>
-				<Property Name="PKG_output.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="PKG_packageName" Type="Str">vires-vtd-custom-device</Property>
-				<Property Name="PKG_publishToSystemLink" Type="Bool">false</Property>
-				<Property Name="PKG_section" Type="Str">Application Software</Property>
-				<Property Name="PKG_shortcuts.Count" Type="Int">0</Property>
-				<Property Name="PKG_sources.Count" Type="Int">0</Property>
-				<Property Name="PKG_synopsis" Type="Str">Vires VTD Custom Device</Property>
-				<Property Name="PKG_version" Type="Str">1.0.0</Property>
 			</Item>
 		</Item>
 	</Item>
