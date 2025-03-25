@@ -91,20 +91,6 @@
 			<Item Name="libMM.dll" Type="Document" URL="../../Libraries/libMM.dll"/>
 			<Item Name="libVC.dll" Type="Document" URL="../../Libraries/libVC.dll"/>
 		</Item>
-		<Item Name="_Test" Type="Folder">
-			<Item Name="_Test_TimedLoop.vi" Type="VI" URL="../_Test/_Test_TimedLoop.vi"/>
-			<Item Name="_Test_GetIDviaString.vi" Type="VI" URL="../_Test/_Test_GetIDviaString.vi"/>
-			<Item Name="_Test_Signal_Tree.vi" Type="VI" URL="../_Test/_Test_Signal_Tree.vi"/>
-			<Item Name="_Test_Read_RDB_Objs.vi" Type="VI" URL="../_Test/_Test_Read_RDB_Objs.vi"/>
-			<Item Name="_Test_U8Array2Str.vi" Type="VI" URL="../_Test/_Test_U8Array2Str.vi"/>
-			<Item Name="_Test_RDB Receive Points.vi" Type="VI" URL="../_Test/_Test_RDB Receive Points.vi"/>
-			<Item Name="_Test_RDBAPI_Receive.vi" Type="VI" URL="../_Test/_Test_RDBAPI_Receive.vi"/>
-			<Item Name="_Test_RDB Receive Points Core.vi" Type="VI" URL="../_Test/_Test_RDB Receive Points Core.vi"/>
-			<Item Name="_Test_MMAPI_Receive.vi" Type="VI" URL="../_Test/_Test_MMAPI_Receive.vi"/>
-			<Item Name="vcapi.vi" Type="VI" URL="../_Test/vcapi.vi"/>
-			<Item Name="_Test_MM_Unit_test.vi" Type="VI" URL="../_Test/_Test_MM_Unit_test.vi"/>
-			<Item Name="_Test_VC_Unit_test.vi" Type="VI" URL="../_Test/_Test_VC_Unit_test.vi"/>
-		</Item>
 		<Item Name="APIs" Type="Folder">
 			<Item Name="DSLV_Tree.lvlib" Type="Library" URL="../../Utility/DSLV_Tree/DSLV_Tree.lvlib"/>
 			<Item Name="LoggingProber.lvlib" Type="Library" URL="../../Utility/Debug_Logger/LoggingProber.lvlib"/>
