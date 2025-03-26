@@ -63,11 +63,9 @@
 		<Item Name="RDB Player Object.ctl" Type="VI" URL="../RDB Player Object.ctl"/>
 		<Item Name="RDB References.ctl" Type="VI" URL="../RDB References.ctl"/>
 	</Item>
-	<Item Name="_RDB_VI_Tree.vi" Type="VI" URL="../_RDB_VI_Tree.vi"/>
 	<Item Name="RDB Clear.vi" Type="VI" URL="../RDB Clear.vi"/>
 	<Item Name="RDB Compose Message.vi" Type="VI" URL="../RDB Compose Message.vi"/>
-	<Item Name="RDB Create Objects Receive.vi" Type="VI" URL="../RDB Create Objects Receive.vi"/>
-	<Item Name="RDB Create Objects Sent.vi" Type="VI" URL="../RDB Create Objects Sent.vi"/>
+	<Item Name="RDB Create Objects.vi" Type="VI" URL="../RDB Create Objects.vi"/>
 	<Item Name="RDB Init New Message.vi" Type="VI" URL="../RDB Init New Message.vi"/>
 	<Item Name="RDB Init.vi" Type="VI" URL="../RDB Init.vi"/>
 	<Item Name="RDB Parse.vi" Type="VI" URL="../RDB Parse.vi"/>
