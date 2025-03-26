@@ -61,7 +61,6 @@
 	<Item Name="Types" Type="Folder">
 		<Item Name="RDB Object.ctl" Type="VI" URL="../RDB Object.ctl"/>
 		<Item Name="RDB Player Object.ctl" Type="VI" URL="../RDB Player Object.ctl"/>
-		<Item Name="RDB Reference.ctl" Type="VI" URL="../RDB Reference.ctl"/>
 		<Item Name="RDB References.ctl" Type="VI" URL="../RDB References.ctl"/>
 	</Item>
 	<Item Name="_RDB_VI_Tree.vi" Type="VI" URL="../_RDB_VI_Tree.vi"/>

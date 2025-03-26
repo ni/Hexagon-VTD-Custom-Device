@@ -102,6 +102,7 @@
 		<Item Name="MM.lvlib" Type="Library" URL="../MM/MM.lvlib"/>
 		<Item Name="SCP.lvlib" Type="Library" URL="../SCP/SCP.lvlib"/>
 		<Item Name="Custom Device Vires VTD.xml" Type="Document" URL="../Custom Device Vires VTD.xml"/>
+		<Item Name="DataContainer.lvclass" Type="LVClass" URL="../DataContainer/DataContainer.lvclass"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="_XNET Convert List From Array To Comma.vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/_XNET Convert List From Array To Comma.vi"/>
@@ -653,6 +654,7 @@
 				<Item Name="XNET String To IO Name (Subframe).vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET String To IO Name (Subframe).vi"/>
 				<Item Name="XNET String To IO Name.vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET String To IO Name.vi"/>
 			</Item>
+			<Item Name="DataContainer.lvclass" Type="LVClass" URL="../DataContainer/DataContainer.lvclass"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -845,6 +847,7 @@
 			<Item Name="libMM.so" Type="Document" URL="../../Libraries/libMM.so"/>
 			<Item Name="libVC.so" Type="Document" URL="../../Libraries/libVC.so"/>
 		</Item>
+		<Item Name="DataContainer.lvclass" Type="LVClass" URL="../DataContainer/DataContainer.lvclass"/>
 		<Item Name="LoggingProber.lvlib" Type="Library" URL="../../Utility/Debug_Logger/LoggingProber.lvlib"/>
 		<Item Name="Vires VTD Engine.lvlib" Type="Library" URL="../Engine/Vires VTD Engine.lvlib"/>
 		<Item Name="Vires VTD Shared.lvlib" Type="Library" URL="../Shared/Vires VTD Shared.lvlib"/>
@@ -1279,6 +1282,7 @@ DirectoryIndex index.htm
 				<Item Name="XNET String To IO Name (Subframe).vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET String To IO Name (Subframe).vi"/>
 				<Item Name="XNET String To IO Name.vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET String To IO Name.vi"/>
 			</Item>
+			<Item Name="DataContainer.lvclass" Type="LVClass" URL="../DataContainer/DataContainer.lvclass"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
 			<Item Name="MM.lvlib" Type="Library" URL="../MM/MM.lvlib"/>
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
@@ -1561,6 +1565,7 @@ DirectoryIndex index.htm
 				<Item Name="XNET String To IO Name (Subframe).vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET String To IO Name (Subframe).vi"/>
 				<Item Name="XNET String To IO Name.vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET String To IO Name.vi"/>
 			</Item>
+			<Item Name="DataContainer.lvclass" Type="LVClass" URL="../DataContainer/DataContainer.lvclass"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
 			<Item Name="MM.lvlib" Type="Library" URL="../MM/MM.lvlib"/>
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
